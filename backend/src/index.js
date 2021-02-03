@@ -8,7 +8,13 @@ app.use(express.json());
 const projects = [];
 
 app.get('/projects', (request, response) => {
-  return response.json(projects);
+  const { title } = request.query;
+
+  const results = title
+    ? projects.filter((project) => project.title.includes(title))
+    : projects;
+
+  return response.json(results);
 });
 
 app.post('/projects', (request, response) => {
@@ -62,5 +68,5 @@ app.delete('/projects/:id', (request, response) => {
 });
 
 app.listen(3333, () => {
-  console.log('Backend started!');
+  console.log('Backend started! 👷');
 });
