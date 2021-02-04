@@ -1,11 +1,11 @@
-import { Router } from 'express';
+import { Router, response } from 'express';
 import knex from '../database/conection';
 
 const locationsRouter = Router();
 
-locationsRouter.get('/', async (request, response) => {
+locationsRouter.post('/', async (request, response) => {
   const {
-    nome,
+    name,
     email,
     whatsapp,
     latitude,
@@ -16,15 +16,13 @@ locationsRouter.get('/', async (request, response) => {
   } = request.body;
 
   const location = {
-    image: 'fake-image.jpg',
-    nome,
+    name,
     email,
     whatsapp,
     latitude,
     longitude,
     city,
     uf,
-    items,
   };
 
   const transaction = await knex.transaction();
@@ -56,6 +54,22 @@ locationsRouter.get('/', async (request, response) => {
     id: location_id,
     ...location,
   });
+});
+
+locationsRouter.get('/:id', async (request, response) => {
+  const { id } = request.params;
+  const location = await knex('locations').where('id', id).first();
+
+  if (!location) {
+    return response.status(400).json({ message: 'Location not found.' });
+  }
+
+  const items = await knex('items')
+    .join('location_items', 'items.id', '=', 'location_items.item_id')
+    .where('location_items.location_id', id)
+    .select('items.title');
+
+  return response.json({ location, items });
 });
 
 export default locationsRouter;
