@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "@types/express": "^4.17.11",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.17",
+    "pg": "^8.5.1",
+    "sqlite3": "^5.0.1"
   }
 }
