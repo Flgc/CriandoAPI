@@ -1,12 +1,15 @@
-import { request, Router, response } from 'express';
+import { Router } from 'express';
 import multer from 'multer';
 import { celebrate, Joi } from 'celebrate';
 import knex from '../database/conection';
 import multerConfig from '../config/multer';
+import isAuthenticated from '../middlewares/isAuthenticated';
 
 const locationsRouter = Router();
 
 const upload = multer(multerConfig);
+
+locationsRouter.use(isAuthenticated);
 
 locationsRouter.get('/', async (request, response) => {
   const { city, uf, items } = request.query;
@@ -22,15 +25,19 @@ locationsRouter.get('/', async (request, response) => {
       .where('city', String(city))
       .where('uf', String(uf))
       .distinct()
-      .select('location.*');
+      .select('locations.*');
+
+    return response.json(locations);
   } else {
     const locations = await knex('locations').select('*');
+
     return response.json(locations);
   }
 });
 
 locationsRouter.get('/:id', async (request, response) => {
   const { id } = request.params;
+
   const location = await knex('locations').where('id', id).first();
 
   if (!location) {
@@ -92,13 +99,11 @@ locationsRouter.post(
 
     const location_id = newIds[0];
 
-    const locationItens = items.map(async (item_id: number) => {
-      const selectedItem = await transaction('items')
-        .where('id', item_id)
-        .first();
+    const locationItems = items.map((item_id: number) => {
+      const selectedItem = transaction('items').where('id', item_id).first();
 
       if (!selectedItem) {
-        return response.status(400).json({ message: 'Item not Found.' });
+        return response.status(400).json({ message: 'Item not found.' });
       }
 
       return {
@@ -107,7 +112,7 @@ locationsRouter.post(
       };
     });
 
-    await transaction('location_items').insert(locationItens);
+    await transaction('location_items').insert(locationItems);
 
     await transaction.commit();
 
