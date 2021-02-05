@@ -31,15 +31,15 @@
 
 # ✨ Features
 
-✔ Introdução ao Node.js
-✔ Configuração do ambiente
-✔ API Rest
-✔ Métodos HTTP
-✔ Middlewares
-✔ Introdução ao Typescript
-✔ Padronização de código
-✔ API básica com Typescript
-✔ Integração com banco de dados
+✔ Introdução ao Node.js<br>
+✔ Configuração do ambiente<br>
+✔ API Rest<br>
+✔ Métodos HTTP<br>
+✔ Middlewares<br>
+✔ Introdução ao Typescript<br>
+✔ Padronização de código<br>
+✔ API básica com Typescript<br>
+✔ Integração com banco de dados<br>
 
 <br><br>
 
