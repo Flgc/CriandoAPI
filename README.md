@@ -1,9 +1,9 @@
 <div align = "center">
 <h1>CriandoAPI</h1>
-<h3>Mini curso Node.js com o processo de criação de uma API Restful com e sem Typescript (Udemy) 2020/2021</h3>
+<h3>Mini curso Node.js e processo de criação de uma API Restful com e sem Typescript (Udemy) 2020/2021</h3>
 <hr>
   
-![JavaScript](https://img.shields.io/badge/-JavaScript%20ES6-F7B93E?style=flat-square&logo=javascript&logoColor=black);
+![JavaScript](https://img.shields.io/badge/-JavaScript%20ES6-F7B93E?style=flat-square&logo=javascript&logoColor=black)
 ![npm](https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white)
 ![Postman](https://img.shields.io/badge/-Postman-FD602F?style=flat-square&logo=postman&logoColor=white)
 ![VSCode](https://img.shields.io/badge/-VSCode-0085D1?style=flat-square&logo=visual-studio-code&logoColor=white)
@@ -16,20 +16,20 @@
 
 <div align="center">
 
-[**Sobre**](https://github.com/Flgc/sds2#-sobre-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
-[**Features**](https://github.com/Flgc/sds2#-features) &nbsp;&nbsp;**|**&nbsp;&nbsp;
-[**Tecnologias utilizadas**](https://github.com/Flgc/sds2#-tecnologias-utilizadas) &nbsp;&nbsp;**|**&nbsp;&nbsp;
-[**Como instalar e executar o projeto**](https://github.com/Flgc/sds2#-como-instalar-e-executar-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
-[**Contato**](https://github.com/Flgc/sds2#-contato) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Sobre**](https://github.com/Flgc/CriandoAPI#-sobre-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Features**](https://github.com/Flgc/CriandoAPI#-features) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Tecnologias utilizadas**](https://github.com/Flgc/CriandoAPI#-tecnologias-utilizadas) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Como instalar e executar o projeto**](https://github.com/Flgc/CriandoAPI#-como-instalar-e-executar-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Contato**](https://github.com/Flgc/CriandoAPI#-contato) &nbsp;&nbsp;**|**&nbsp;&nbsp;
 
 </div><br><br>
 
-## 📃 Sobre o projeto
+# 📃 Sobre o projeto
 
 <p align="justify">O objetivo deste mini curso foi alcançar aquelas pessoas que estão começando a desenvolver apps usando Node.js, de forma a esclarecer conceitos importantes para que consigam de forma mais objetiva alcançar o próximo nível, e de fato conseguirem uma colocação no mercado como desenvolvedor de apps Node.</p>
 <br><br>
 
-## ✨ Features
+# ✨ Features
 
 ✔ Introdução ao Node.js
 ✔ Configuração do ambiente
