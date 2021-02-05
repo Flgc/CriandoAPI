@@ -1,9 +1,9 @@
 import { Router } from 'express';
 import knex from '../database/conection';
 
-const itemsRoutes = Router();
+const itemsRouter = Router();
 
-itemsRoutes.get('/', async (request, response) => {
+itemsRouter.get('/', async (request, response) => {
   const items = await knex('items').select('*');
 
   const serializedItems = items.map((item) => {
@@ -14,7 +14,7 @@ itemsRoutes.get('/', async (request, response) => {
     };
   });
 
-  return response.json({ serializedItems });
+  return response.json(serializedItems);
 });
 
-export default itemsRoutes;
+export default itemsRouter;
