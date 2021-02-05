@@ -32,10 +32,15 @@
 # ✨ Features
 
 ✔ Introdução ao Node.js
+
 ✔ Configuração do ambiente
+
 ✔ API Rest
+
 ✔ Métodos HTTP
+
 ✔ Middlewares
+
 ✔ Introdução ao Typescript
 ✔ Padronização de código
 ✔ API básica com Typescript
