@@ -71,7 +71,8 @@ npm install ou yarn install
 
 # executar o projeto
 
-Após essa instalação execute a aplicação com o comando `npm run start`. Acesse a url `http://localhost:3333` no browser.
+Após essa instalação execute a aplicação com o comando `npm run start`.
+Acesse a url `http://localhost:3333` no browser.
 
 Utilize o Postman para testar a API em suas rotas.
 
