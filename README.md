@@ -22,12 +22,12 @@
 [**Como instalar e executar o projeto**](https://github.com/Flgc/CriandoAPI#-como-instalar-e-executar-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
 [**Contato**](https://github.com/Flgc/CriandoAPI#-contato) &nbsp;&nbsp;**|**&nbsp;&nbsp;
 
-</div><br><br>
+</div><br>
 
 # 📃 Sobre o projeto
 
 <p align="justify">O objetivo deste mini curso foi alcançar aquelas pessoas que estão começando a desenvolver apps usando Node.js, de forma a esclarecer conceitos importantes para que consigam de forma mais objetiva alcançar o próximo nível, e de fato conseguirem uma colocação no mercado como desenvolvedor de apps Node.</p>
-<br><br>
+<br>
 
 # ✨ Features
 
@@ -41,7 +41,7 @@
 ✔ API básica com Typescript<br>
 ✔ Integração com banco de dados<br>
 
-<br><br>
+<br>
 
 # 🚀 Tecnologias utilizadas
 
@@ -82,8 +82,6 @@ Utilize o Postman para testar a API em suas rotas.
 # para pupular as tabelas do banco de dados
 npm run knex:seed
 
-
-```
 
 # 📲 Contato
 
